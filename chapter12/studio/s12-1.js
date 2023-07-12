@@ -1,9 +1,19 @@
 // 12.8.1. Select the Crew
 
 // Code your selectRandomEntry function here:
-
+function selectRandomEntry(a){
+  for (let i = 0; i < 3; i++){
+    let randomId = [];
+    while(a.includes(astronautID)){
+      randomId.push(a[i].astronautID);
+    }
+  }
+}
 
 // Code your buildCrewArray function here:
+function buildCrewArray(x,y){
+
+}
 
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
@@ -55,3 +65,5 @@ let candidateF = {
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
 // Code your template literal and console.log statements:
+
+console.log(` ${} $`)
