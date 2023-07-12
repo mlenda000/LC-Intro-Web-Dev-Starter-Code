@@ -1,13 +1,31 @@
 // 12.8.2. Orbit Calculations
 
 // Code your orbitCircumference function here:
-
+function orbitCircumference(radius){
+  let C = 2*Math.PI*radius
+  return Math.round(C)
+}
 
 // Code your missionDuration function here:
+function missionDuration(numOfOrbitsCompleted,orbitRadius,orbitalSpeed){
 
+  //time = distance / speed
+  let time = numOfOrbitsCompleted*(orbitCircumference(orbitRadius) / orbitalSpeed)
+  
+  return (Math.round(time*100)/100);
+}
+
+
+  
 
 // Copy/paste your selectRandomEntry function here:
-
+function selectRandomEntry(a){
+  let randomId = [];
+  for (let i = 0; i < 3; i++){
+    randomId.push(a.splice([Math.round(Math.random()*a.length-1)],1)[0]);
+    }
+    return randomId;
+  }
 
 // Code your oxygenExpended function here:
 
@@ -57,4 +75,8 @@ let candidateA = {
   };
   
   let crew = [candidateA,candidateC,candidateE];
+  let orbitRadius = 2000;
+  let orbitalSpeed = 28000;
+
+  console.log(`The mission will travel ${orbitCircumference(2000)}km around the planet, and it will take ${missionDuration(5,orbitRadius,orbitalSpeed)} hours to complete.`)
   
