@@ -29,7 +29,6 @@ return tempArr
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
 
-console
 // Here are the candidates and the 'animals' array:
 let candidateA = {
   'name':'Gordon Shumway',
