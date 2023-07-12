@@ -80,5 +80,3 @@ function race(animals){
 }
 
 console.log(race(crew));
-
-//do stuff already
