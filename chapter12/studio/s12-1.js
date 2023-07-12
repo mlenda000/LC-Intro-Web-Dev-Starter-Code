@@ -5,7 +5,7 @@ function selectRandomEntry(a){
   for (let i = 0; i < 3; i++){
     let randomId = [];
     while(a.includes(astronautID)){
-      randomId.push(a[i].astronautID);
+    
     }
   }
 }
