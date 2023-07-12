@@ -23,10 +23,6 @@ function buildCrewArray(idNum,candidate){
 return tempArr
 }
   
-
-
-
-
 let idNumbers = [291, 414, 503, 599, 796, 890];
 
 // Here are the candidates and the 'animals' array:
