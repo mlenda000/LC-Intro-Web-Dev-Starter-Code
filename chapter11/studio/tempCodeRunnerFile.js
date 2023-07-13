@@ -1,0 +1,1 @@
+newArray = array.map(identity);
