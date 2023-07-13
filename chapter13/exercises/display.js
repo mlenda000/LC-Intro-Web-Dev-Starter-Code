@@ -35,4 +35,6 @@ function printAll(names, tests, scores){
     return;
   }
   
-  
+  module.exports = {
+    printAll: printAll
+  };
