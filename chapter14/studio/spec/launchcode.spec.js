@@ -15,13 +15,13 @@ describe("Testing launchcode", function(){
       expect(launchcode.percentageCoolEmployees).toEqual(100)
     });
 
-    it("should return for programsOffered key to return the array of programs offered", function(){
-      expect(launchcode.programsOffered).toEqual(["LC101", "LaunchCode Women+", "CodeCamp"])
-    });
-    
-    it("should return for programsOffered key to return the length of the array = to 3", function(){
+    it("should return for programsOffered key to check what it contains and the length,", function(){ 
+      expect(launchcode.programsOffered).toContain('LC101');
+      expect(launchcode.programsOffered).toContain('LaunchCode Women+');
+      expect(launchcode.programsOffered).toContain('CodeCamp')
       expect(launchcode['programsOffered'].length).toEqual(3)
-    });  
+    });
+     
 
     it("should return for launchCode divisible by 2 and nothing else", function(){
       expect(launchcode.method(4)).toEqual('Launch!')
