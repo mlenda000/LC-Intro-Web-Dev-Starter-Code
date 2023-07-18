@@ -1,16 +1,17 @@
 // 17.4.2. Test Student Labs
 
 function gradeLabs(labs) {
-  try {
+ 
     for (let i=0; i < labs.length; i++) {
       let lab = labs[i];
-      let result = lab.runLab(3);
-      console.log(`${lab.student} code worked: ${result === 27}`);
+      try {
+        let result = lab.runLab(3);
+        console.log(`${lab.student} code worked: ${result === 27}`);
+    
+      }catch(err){
+        console.log('Error Thrown')
+      }
     }
-  }catch(err){
-    console.log('Error Thrown')
-  }
-
   }
   
   let studentLabs = [
@@ -52,4 +53,4 @@ function gradeLabs(labs) {
  ];
  
  
-  gradeLabs(studentLabs2);
+gradeLabs(studentLabs2);
