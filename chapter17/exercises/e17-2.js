@@ -53,4 +53,4 @@ function gradeLabs(labs) {
  ];
  
  
-gradeLabs(studentLabs2);
+  gradeLabs(studentLabs2);
