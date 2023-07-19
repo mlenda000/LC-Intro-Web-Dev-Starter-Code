@@ -1,4 +1,5 @@
 const { time } = require("console");
+const input = require('readline-sync');
 
 // Define your Book class here:
 class Book{
@@ -59,7 +60,9 @@ console.log(newManual);
 
 console.log(newNovel);
 
-for (i = 0; i < 5; i++){
+let usrCheckedOut = input.question('How many times has this book been checked out?\t')
+
+for (i = 0; i < Number(usrCheckedOut); i++){
   newNovel.checkedOut();
 };
 console.log(newNovel); 
