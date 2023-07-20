@@ -1,1 +1,1 @@
-average(this.scores)
+gator.status()
