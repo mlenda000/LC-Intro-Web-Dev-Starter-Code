@@ -7,10 +7,10 @@ class CrewCandidate {
         this.scores = scores;
 
     }
-    addingScores = function(scores){
-        this.scores.push(scores);
+    addingScores = function(grade){
+        this.scores.push(grade);
     }
-    average = function(scores){
+    average = function(){
         let totalScore = 0;
         for (let i = 0;i < this.scores.length; i++){
             totalScore += this.scores[i];
@@ -21,7 +21,7 @@ class CrewCandidate {
     }
 
     status = function(){
-        this.average(this.scores)
+        this.average()
         if (this.Average >= 90){
             console.log(`${this.name} earned an average test score of ${this.Average} and has a status of Accepted`);
         }else if(this.Average >= 80){
@@ -45,32 +45,32 @@ let gator = new CrewCandidate('Glad Gator',225,[75,78,62]);
 
 // gator.status
 
-console.log(bear.addingScores(83))
-console.log(bear)
+// console.log(bear.addingScores(83))
+// console.log(bear)
 
-bear.status()
-console.log(bear)
+// bear.status()
+// console.log(bear)
 
 //Add methods for adding scores, averaging scores and determining candidate status as described in the studio activity.
 
 
 
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
-// gator.status()
-
-// let i = 0;
-// while(gator.average() < 80){
-// gator.addingScores(100);
-// i++
-// console.log(i)
-// }
 gator.status()
 
 let i = 0;
-while(gator.average() < 90){
+while(gator.average() < 80){
 gator.addingScores(100);
 i++
 console.log(i)
 }
-
 gator.status()
+
+// let i = 0;
+// while(gator.average() < 90){
+// gator.addingScores(100);
+// i++
+// console.log(i)
+// }
+
+// gator.status()
