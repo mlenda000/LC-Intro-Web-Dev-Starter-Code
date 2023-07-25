@@ -1,5 +1,16 @@
+html{
+
+
+}
 body {
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 325%;
     background-color: yellow;
+
+
+
+    
     /* text-align: center; */
 }
 p {
@@ -9,11 +20,16 @@ h1 {
     font-size: 36px;
 }
 .headerAlignment {
+    
     text-align: center;
+    height: 25%;
+    width: 90%;
+    margin:0;
+    background-color: aquamarine;
 }
 #cool-text{
     color: blue;
 }
 #listColor{
-    color:pink;
+    color:red;
 }
